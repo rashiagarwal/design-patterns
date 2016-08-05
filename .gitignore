@@ -8,4 +8,7 @@
 .idea/
 design-patterns.iml
 
+# target folder
+target/
+
 
