@@ -1,10 +1,10 @@
 package structural.bridge;
 
-import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Main {
 
-  @Setter
+  @Autowired
   private static Switch aSwitch;
 
   public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class Main {
     triggerSwitch();
   }
 
-  static void setEquipment(String equipment) {
+  private static void setEquipment(String equipment) {
     if (equipment.equals("Bulb")) {
       aSwitch = new Switch(new Bulb());
     }

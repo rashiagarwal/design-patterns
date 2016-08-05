@@ -2,6 +2,7 @@ package structural.bridge;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
@@ -14,13 +15,16 @@ public class MainTest {
   @Mock
   private Switch aSwitch;
 
+  @InjectMocks
+  private Main applicationEntry;
+
   @Test
   public void shouldSwitchOnBulb() {
-    Main.main(new String[]{"Bulb"});
+    applicationEntry.main(new String[]{"Bulb"});
   }
 
   @Test
   public void shouldSwitchOnRefrigerator() {
-    Main.main(new String[]{"Refrigerator"});
+    applicationEntry.main(new String[]{"Refrigerator"});
   }
 }
