@@ -1,6 +1,10 @@
- Build Status of master:
-
+Build Status of master:
 [![Build Status](https://snap-ci.com/rashiagarwal/design-patterns/branch/master/build_image)](https://snap-ci.com/rashiagarwal/design-patterns/branch/master)
+
+
+Unit Test coverage status of master:
+[![Coverage Status](https://coveralls.io/repos/github/rashiagarwal/design-patterns/badge.svg?branch=master)](https://coveralls.io/github/rashiagarwal/design-patterns?branch=master)
+
 
 Design Patterns is developed using java framework for learning purpose.
  
