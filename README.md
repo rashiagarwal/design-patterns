@@ -19,3 +19,5 @@ To Get started:
 0. To generate unit test code coverage report use following command : `mvn cobertura:cobertura`
 
 0. To view code coverage report use following command : `open target/site/cobertura/index.html`
+
+0. To Report updates on dependencies : `mvn versions:display-dependency-updates`
