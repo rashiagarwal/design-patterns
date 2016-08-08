@@ -11,4 +11,7 @@ design-patterns.iml
 # target folder
 target/
 
+#Mac files
+.DS_Store
+
 
