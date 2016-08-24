@@ -47,10 +47,10 @@ public class DirectorTest {
     director = new Director(reportExcel);
     Report result = director.makeReport();
 
-    Mockito.verify(reportPDF, times(1)).setReportType();
-    Mockito.verify(reportPDF, times(1)).setReportHeader();
-    Mockito.verify(reportPDF, times(1)).setReportFooter();
-    Mockito.verify(reportPDF, times(1)).getReport();
+    Mockito.verify(reportExcel, times(1)).setReportType();
+    Mockito.verify(reportExcel, times(1)).setReportHeader();
+    Mockito.verify(reportExcel, times(1)).setReportFooter();
+    Mockito.verify(reportExcel, times(1)).getReport();
     assertThat(result.getType(), is("excel report type"));
     assertThat(result.getHeader(), is("excel report header"));
     assertThat(result.getFooter(), is("excel report footer"));
