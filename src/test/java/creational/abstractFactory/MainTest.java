@@ -2,16 +2,22 @@ package creational.abstractFactory;
 
 import org.junit.Test;
 
-import static creational.abstractFactory.Main.main;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 
 public class MainTest {
-  @Test
-  public void shouldRenderButton() {
-    main(new String[]{"2"});
-  }
+
+  private Main main = new Main();
 
   @Test
   public void shouldRenderTextBox() {
-    main(new String[]{"1"});
+    String renderUIObject = main.renderUIObject(1);
+    assertThat(renderUIObject, is("TextBox Rendered"));
+  }
+
+  @Test
+  public void shouldRenderButton() {
+    String renderUIObject = main.renderUIObject(2);
+    assertThat(renderUIObject, is("Button Rendered"));
   }
 }

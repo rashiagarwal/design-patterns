@@ -2,9 +2,9 @@ package creational.factory;
 
 public class Main {
 
-  public static void main(String[] args) {
+  public String getInvoice(int id) {
     InvoiceFactory invoiceFactory = new InvoiceFactory();
-    IInvoice invoice = invoiceFactory.getInvoice(Integer.parseInt(args[0]));
-    invoice.Print();
+    IInvoice invoice = invoiceFactory.getInvoice(id);
+    return invoice.Print();
   }
 }

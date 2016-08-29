@@ -2,8 +2,8 @@ package creational.factory;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 
 public class InvoiceFactoryTest {
 
@@ -13,7 +13,7 @@ public class InvoiceFactoryTest {
     InvoiceFactory invoiceFactory = new InvoiceFactory();
     IInvoice invoice = invoiceFactory.getInvoice(1);
 
-    assertEquals(InvoiceWithHeader.class, invoice.getClass());
+    assertTrue(invoice instanceof InvoiceWithHeader);
   }
 
   @Test
@@ -21,7 +21,7 @@ public class InvoiceFactoryTest {
     InvoiceFactory invoiceFactory = new InvoiceFactory();
     IInvoice invoice = invoiceFactory.getInvoice(2);
 
-    assertEquals(InvoiceWithoutHeader.class, invoice.getClass());
+    assertTrue(invoice instanceof InvoiceWithoutHeader);
   }
 
   @Test
@@ -31,5 +31,4 @@ public class InvoiceFactoryTest {
 
     assertNull(invoice);
   }
-
 }

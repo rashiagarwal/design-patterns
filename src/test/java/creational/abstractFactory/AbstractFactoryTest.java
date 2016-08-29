@@ -2,8 +2,8 @@ package creational.abstractFactory;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 
 public class AbstractFactoryTest {
 
@@ -11,14 +11,14 @@ public class AbstractFactoryTest {
   public void shouldCreateTextBoxObject() {
     IRender uiObject = AbstractFactory.getUIObject(1);
 
-    assertEquals(TextBox.class, uiObject.getClass());
+    assertTrue(uiObject instanceof TextBox);
   }
 
   @Test
   public void shouldCreateButtonObject() {
     IRender uiObject = AbstractFactory.getUIObject(2);
 
-    assertEquals(Button.class, uiObject.getClass());
+    assertTrue(uiObject instanceof Button);
   }
 
   @Test
