@@ -1,29 +1,31 @@
-Build Status of master :
-
-[![Build Status](https://snap-ci.com/rashiagarwal/design-patterns/branch/master/build_image)](https://snap-ci.com/rashiagarwal/design-patterns/branch/master)
+# Design Patterns
 
 
-Unit Test coverage status of master :
-
-[![Coverage Status](https://coveralls.io/repos/github/rashiagarwal/design-patterns/badge.svg?branch=master)](https://coveralls.io/github/rashiagarwal/design-patterns?branch=master)
+[![Build Status](https://snap-ci.com/rashiagarwal/design-patterns/branch/master/build_image)](https://snap-ci.com/rashiagarwal/design-patterns/branch/master)  [![Coverage Status](https://coveralls.io/repos/github/rashiagarwal/design-patterns/badge.svg?branch=master)](https://coveralls.io/github/rashiagarwal/design-patterns?branch=master)
 
 
 Design Patterns is developed using java framework for learning purpose.
  
-Requirement:
-==========
+## Prerequisite
 
 * Java 8
 * Maven 3.3.9
 
 
-To Get started:
-===========
+## Getting Started
     
-0. To run unit test from console use following command : `mvn test`
+* To run unit test from console use following command : `mvn test`
 
-0. To generate unit test code coverage report use following command : `mvn cobertura:cobertura`
+* To generate unit test code coverage report use following command : `mvn cobertura:cobertura`
 
-0. To view code coverage report use following command : `open target/site/cobertura/index.html`
+* To view code coverage report use following command : `open target/site/cobertura/index.html`
 
-0. To Report updates on dependencies : `mvn versions:display-dependency-updates`
+* To Report updates on dependencies : `mvn versions:display-dependency-updates`
+
+## Description
+
+See the [Wiki](https://github.com/rashiagarwal/design-patterns/wiki) page.
+
+## License
+
+See the [LICENSE](https://github.com/rashiagarwal/design-patterns/blob/master/LICENSE.md) file.
